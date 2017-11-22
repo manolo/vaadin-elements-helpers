@@ -1,0 +1,27 @@
+{
+  "name": "vaadin-helpers",
+  "description": "vaadin-helpers",
+  "main": "index.html",
+  "keywords": [
+    "Vaadin",
+    "elements",
+    "helpers",
+    "web-components",
+    "web-component",
+    "polymer"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "^2.0.0",
+    "vaadin-overlay": "changes_for_crud",
+    "vaadin-dialog": "changes_for_crud",
+    "vaadin-notification": "master"
+  },
+  "devDependencies": {
+    "iron-component-page": "^3.0.1"
+  }
+}
