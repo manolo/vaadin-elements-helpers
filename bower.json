@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "iron-component-page": "^3.0.1"
+  },
+  "resolutions": {
+    "vaadin-overlay": "changes_for_crud"
   }
 }
