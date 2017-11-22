@@ -19,7 +19,9 @@
     "polymer": "^2.0.0",
     "vaadin-overlay": "changes_for_crud",
     "vaadin-dialog": "changes_for_crud",
-    "vaadin-notification": "master"
+    "vaadin-notification": "master",
+    "vaadin-dropdown-menu": "^1.0.0-alpha2",
+    "vaadin-list-box": "master"
   },
   "devDependencies": {
     "iron-component-page": "^3.0.1"

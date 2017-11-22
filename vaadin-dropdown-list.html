@@ -1,0 +1,40 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../vaadin-item/vaadin-item.html">
+<link rel="import" href="../vaadin-list-box/vaadin-list-box.html">
+<link rel="import" href="../vaadin-dropdown-menu/vaadin-dropdown-menu.html">
+<link rel="import" href="../polymer/lib/elements/dom-repeat.html">
+
+<dom-module id="vaadin-dropdown-list">
+  <template>
+    <vaadin-dropdown-menu label="[[label]]" value="[[value]]" required="[[required]]" placeholder="[[placeholder]]">
+      <template>
+        <vaadin-list-box>
+          <template is="dom-repeat" items="[[items]]">
+            <vaadin-item>[[item]]</vaadin-item>
+          </template>
+        </vaadin-list-box>
+      </template>
+    </vaadin-dropdown-menu>
+  </template>
+
+  <script>
+    {
+      class DropdownListElement extends (class extends Polymer.Element {}) {
+        static get is() {
+          return 'vaadin-dropdown-list';
+        }
+
+        static get properties() {
+          return {
+            items: {
+              type: Object
+            }
+          };
+        }
+      }
+
+      window.customElements.define(DropdownListElement.is, DropdownListElement);
+      Vaadin.DropdownListElement = DropdownListElement;
+    }
+  </script>
+</dom-module>
