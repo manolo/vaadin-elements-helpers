@@ -1,6 +1,6 @@
 {
-  "name": "vaadin-helpers",
-  "description": "vaadin-helpers",
+  "name": "proto-helpers",
+  "description": "proto-helpers",
   "main": "index.html",
   "keywords": [
     "Vaadin",
@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "polymer": "^2.0.0",
-    "vaadin-overlay": "changes_for_crud",
+    "vaadin-overlay": "^1.6.0",
     "vaadin-dialog": "changes_for_crud",
     "vaadin-notification": "master",
     "vaadin-dropdown-menu": "^1.0.0-alpha2",
@@ -25,8 +25,5 @@
   },
   "devDependencies": {
     "iron-component-page": "^3.0.1"
-  },
-  "resolutions": {
-    "vaadin-overlay": "changes_for_crud"
   }
 }
